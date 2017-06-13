@@ -1,6 +1,7 @@
 注意：
 <br/>（1）请在接口前添加ip及端口号
-<br/>（2）<label style="background-color:red"> &nbsp; &nbsp; &nbsp;&nbsp;</label>标注的POST参数为必填字段
+<br/>（2）GET请求的参数均为必填字段
+<br/>（3）POST请求<label style="background-color:red"> &nbsp; &nbsp; &nbsp;&nbsp;</label>标注的参数为必填字段
 <br/><br/>
 
 
@@ -21,7 +22,8 @@
 
 <br/><label style="color:#FF9800">根据巡检任务获取构件列表</label>
 <br/>请求方式: GET
-<br/>请求参数: taskId &nbsp; 巡检任务Id
+<br/>请求参数: 
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; taskId &nbsp; 巡检任务Id
 <br/>请求接口: /insApp/component_list
 <br/><br/><br/>
 
@@ -44,37 +46,42 @@
 
 <br/><label style="color:#FF9800">获取构件详情</label>
 <br/>请求方式: GET
-<br/>请求参数: taskId &nbsp; 巡检任务Id
-<br/>请求参数: bridgeComponentId &nbsp; 构件Id
+<br/>请求参数: 
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; taskId &nbsp; 巡检任务Id
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; bridgeComponentId &nbsp; 构件Id
 <br/>请求接口: /insApp/component_details
 <br/><br/><br/>
 
 
 <br/><label style="color:#FF9800">获取巡检任务的构件的病害列表</label>
 <br/>请求方式: GET
-<br/>请求参数: taskId &nbsp; 巡检任务Id
-<br/>请求参数: componentId &nbsp; 构件Id
+<br/>请求参数:
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; taskId &nbsp; 巡检任务Id
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; componentId &nbsp; 构件Id
 <br/>请求接口: /insApp/damage_list
 <br/><br/><br/>
 
 
 <br/><label style="color:#FF9800">根据构件获取巡检任务</label>
 <br/>请求方式: GET
-<br/>请求参数: id &nbsp; 构件Id
+<br/>请求参数: 
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; id &nbsp; 构件Id
 <br/>请求接口: /insApp/task_list_component
 <br/><br/><br/>
 
 
 <br/><label style="color:#FF9800">构件树展示</label>
 <br/>请求方式: GET
-<br/>请求参数: bridgeId &nbsp; 桥梁Id
+<br/>请求参数: 
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; bridgeId &nbsp; 桥梁Id
 <br/>请求接口: /insApp/component_tree
 <br/><br/><br/>
 
 
 <br/><label style="color:#FF9800">获取构件的所有历史病害</label>
 <br/>请求方式: GET
-<br/>请求参数: id &nbsp; 构件Id
+<br/>请求参数: 
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; id &nbsp; 构件Id
 <br/>请求接口: /insApp/damage_list_component
 <br/><br/><br/>
 
@@ -89,27 +96,31 @@
 
 <br/><label style="color:#FF9800">获取病害详情</label>
 <br/>请求方式: GET
-<br/>请求参数: id &nbsp; 病害Id
+<br/>请求参数: 
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; id &nbsp; 病害Id
 <br/>请求接口: /insApp/damage_details
 <br/><br/><br/>
 
 
 <br/><label style="color:#FF9800">获取病害类型</label>
 <br/>请求方式: GET
-<br/>请求参数: typeId &nbsp; 构件类型Id
+<br/>请求参数: 
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; typeId &nbsp; 构件类型Id
 <br/>请求接口: /damageType/type
 <br/><br/><br/>
 
 
 <br/><label style="color:#FF9800">获取图片</label>
 <br/>请求方式: GET
-<br/>请求参数: id &nbsp; 图片Id
+<br/>请求参数: 
+<br>&nbsp; &nbsp; &nbsp; &nbsp; id &nbsp; 图片Id
 <br/>请求接口: /document/getImg
 <br/><br/><br/>
 
 
 <br/><label style="color:#FF9800">根据病害类型获取病害扩展属性</label>
 <br/>请求方式: GET
-<br/>请求参数: typeId &nbsp; 病害类型Id
+<br/>请求参数: 
+<br/>&nbsp; &nbsp; &nbsp; &nbsp; typeId &nbsp; 病害类型Id
 <br/>请求接口: /damageTypeKey/type
 <br/><br/><br/>
