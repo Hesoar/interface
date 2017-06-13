@@ -8,13 +8,13 @@
 <br/><label style="color:#FF9800">历史巡检任务</label>
 <br/>请求方式: POST
 <br/>请求参数: 
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label style="background-color:red">page</label> &nbsp; 当前第几页
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label style="background-color:red">rows</label> &nbsp; 一页显示几条数据
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>taskName</label> &nbsp; 任务名称
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>planName</label> &nbsp; 计划名称
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>beginTimeStart</label> &nbsp; 任务开始时间
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>endTimeEnd</label> &nbsp; 任务结束时间
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>owner</label> &nbsp; 任务所属人
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label style="background-color:red">page</label> &nbsp; 当前第几页 int
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label style="background-color:red">rows</label> &nbsp; 一页显示几条数据 int
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>taskName</label> &nbsp; 任务名称 string
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>planName</label> &nbsp; 计划名称 string
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>beginTimeStart</label> &nbsp; 任务开始时间 string yyyy-MM-dd
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>endTimeEnd</label> &nbsp; 任务结束时间 string yyyy-MM-dd
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>owner</label> &nbsp; 任务所属人Id string
 <br/>请求接口: /insApp/task_his
 <br/><br/><br/>
 
@@ -23,15 +23,15 @@
 <br/><label style="color:#FF9800">历史病害</label>
 <br/>请求方式: POST
 <br/>请求参数: 
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label style="background-color:red">page</label> &nbsp; 当前第几页
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label style="background-color:red">rows</label> &nbsp; 一页显示几条数据
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>createTimeStart</label> &nbsp; 病害录入时间（起始）
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>createTimeEnd</label> &nbsp; 病害录入时间（结束）
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>bridge</label> &nbsp; 桥梁Id
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>bridgeComponentName</label> &nbsp; 构件名称
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>inspectTaskName</label> &nbsp; 巡检任务名称
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>user</label> &nbsp; 病害录入人Id
-<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>group</label> &nbsp; 巡检班组Id
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label style="background-color:red">page</label> &nbsp; 当前第几页 int
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label style="background-color:red">rows</label> &nbsp; 一页显示几条数据 int
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>createTimeStart</label> &nbsp; 病害录入时间（起始）string yyyy-MM-dd
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>createTimeEnd</label> &nbsp; 病害录入时间（结束）string yyyy-MM-dd
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>bridge</label> &nbsp; 桥梁Id string
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>bridgeComponentName</label> &nbsp; 构件名称 string
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>inspectTaskName</label> &nbsp; 巡检任务名称 string
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>user</label> &nbsp; 病害录入人Id string
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; <label>group</label> &nbsp; 巡检班组Id string
 <br/>请求接口: /insApp/damage_list_all
 <br/><br/><br/>
 
