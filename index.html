@@ -1,11 +1,19 @@
-<label style="background-color:yellow"> 注：请在接口前添加ip及端口号</label>
-<br/>
+注意：
+<br/>（1）请在接口前添加ip及端口号
+<br/>（2）<label style="background-color:red"> &nbsp; &nbsp; &nbsp;&nbsp;</label>标注的POST参数为必填字段
+<br/><br/>
 
 
 <br/><label style="color:#FF9800">历史巡检任务</label>
-<br/>请求方式: GET
-<br/>请求参数: page &nbsp; 当前第几页
-<br/>请求参数: rows &nbsp; 一页显示几条数据
+<br/>请求方式: POST
+<br/>请求参数: <label style="background-color:red">page</label> &nbsp; 当前第几页 &nbsp; 
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label style="background-color:red">rows</label> &nbsp; 一页显示几条数据
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>taskName</label> &nbsp; 任务名称
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>planName</label> &nbsp; 计划名称
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>beginTimeStart</label> &nbsp; 任务开始时间
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>endTimeEnd</label> &nbsp; 任务结束时间
+<br/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label>owner</label> &nbsp; 任务所属人
+
 <br/>请求接口: /insApp/task_his
 <br/><br/><br/>
 
